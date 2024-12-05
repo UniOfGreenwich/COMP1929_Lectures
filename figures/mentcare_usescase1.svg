@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="86px" preserveAspectRatio="none" style="width:594px;height:86px;background:#FFFFFF;" version="1.1" viewBox="0 0 594 86" width="594px" zoomAndPan="magnify"><defs/><g><g id="elem_TD"><ellipse cx="288.9293" cy="43.2859" fill="#F1F1F1" rx="71.9293" ry="16.7859" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="236.9293" y="47.0334">Transfer Data</text></g><!--MD5=[a3b1769c041d70c27c998c9b7d2f8870]
+entity Medical Receptionist--><g id="elem_Medical Receptionist"><ellipse cx="81.5" cy="14" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M81.5,22 L81.5,49 M68.5,30 L94.5,30 M81.5,49 L68.5,64 M81.5,49 L94.5,64 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="6" y="78.4951">Medical Receptionist</text></g><!--MD5=[28de287a7d4348a188f2731446c4dab9]
+entity Patient Record System--><g id="elem_Patient Record System"><ellipse cx="504" cy="14" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M504,22 L504,49 M491,30 L517,30 M504,49 L491,64 M504,49 L517,64 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="421" y="78.4951">Patient Record System</text></g><!--MD5=[10a925f0b10e3930f4e4947b621f9f71]
+link Medical Receptionist to TD--><g id="link_Medical Receptionist_TD"><path d="M157.272,43.5 C174.848,43.5 193.607,43.5 211.267,43.5 " fill="none" id="Medical Receptionist-to-TD" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="216.711,43.5,207.711,39.5,211.711,43.5,207.711,47.5,216.711,43.5" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[ac7af10239b84180b960b31d7677f05f]
+link TD to Patient Record System--><g id="link_TD_Patient Record System"><path d="M361.222,43.5 C378.688,43.5 397.582,43.5 415.707,43.5 " fill="none" id="TD-to-Patient Record System" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="420.797,43.5,411.797,39.5,415.797,43.5,411.797,47.5,420.797,43.5" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[b47bb5d3646687a76fb80d8f6fcb2f92]
+@startuml
+left to right direction
+"Transfer Data" as (TD)
+
+:Medical Receptionist: - -> (TD) 
+
+(TD) - -> :Patient Record System:
+@enduml
+
+PlantUML version 1.2022.14beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
