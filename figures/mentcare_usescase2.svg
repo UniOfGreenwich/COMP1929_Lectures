@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="336px" preserveAspectRatio="none" style="width:394px;height:336px;background:#FFFFFF;" version="1.1" viewBox="0 0 394 336" width="394px" zoomAndPan="magnify"><defs/><g><g id="elem_RP"><ellipse cx="302.2839" cy="24.3568" fill="#F1F1F1" rx="79.7839" ry="18.3568" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="241.5356" y="27.7613">Register Patient</text></g><g id="elem_URP"><ellipse cx="302.728" cy="97.5456" fill="#F1F1F1" rx="85.728" ry="19.5456" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="236.728" y="100.3923">Unregister Patient</text></g><g id="elem_VPI"><ellipse cx="302.495" cy="171.699" fill="#F1F1F1" rx="83.995" ry="19.199" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="238.2335" y="174.6356">View Patient Info.</text></g><g id="elem_TD"><ellipse cx="302.4293" cy="242.2859" fill="#F1F1F1" rx="71.9293" ry="16.7859" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="250.4293" y="246.0334">Transfer Data</text></g><g id="elem_CP"><ellipse cx="302.5591" cy="312.6118" fill="#F1F1F1" rx="78.5591" ry="18.1118" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="242.8328" y="316.1525">Contact Patient</text></g><!--MD5=[a3b1769c041d70c27c998c9b7d2f8870]
+entity Medical Receptionist--><g id="elem_Medical Receptionist"><ellipse cx="81.5" cy="142" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M81.5,150 L81.5,177 M68.5,158 L94.5,158 M81.5,177 L68.5,192 M81.5,177 L94.5,192 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="6" y="206.4951">Medical Receptionist</text></g><!--MD5=[0b2e1bdf6a59e43c8249186a1d50d455]
+link Medical Receptionist to RP--><g id="link_Medical Receptionist_RP"><path d="M122.274,133.478 C147.899,110.346 182.725,81.343 217,60.5 C228.306,53.625 241.162,47.424 253.374,42.183 " fill="none" id="Medical Receptionist-to-RP" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="258.198,40.147,248.3509,39.9621,253.5916,42.0916,251.4622,47.3323,258.198,40.147" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[521d48196e4cd35610a82c69ccaf44e7]
+link Medical Receptionist to URP--><g id="link_Medical Receptionist_URP"><path d="M157.255,146.24 C187.351,136.071 221.353,124.582 248.783,115.313 " fill="none" id="Medical Receptionist-to-URP" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="253.826,113.609,244.019,112.7019,249.0893,115.2103,246.581,120.2806,253.826,113.609" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[495522506f2ec251e2372fe4972c92a6]
+link Medical Receptionist to VPI--><g id="link_Medical Receptionist_VPI"><path d="M157.255,171.5 C175.264,171.5 194.671,171.5 213.232,171.5 " fill="none" id="Medical Receptionist-to-VPI" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="218.443,171.5,209.443,167.5,213.443,171.5,209.443,175.5,218.443,171.5" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[10a925f0b10e3930f4e4947b621f9f71]
+link Medical Receptionist to TD--><g id="link_Medical Receptionist_TD"><path d="M157.255,195.736 C189.467,206.179 226.154,218.073 254.468,227.252 " fill="none" id="Medical Receptionist-to-TD" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="259.296,228.817,251.9678,222.2369,254.5396,227.2754,249.5012,229.8471,259.296,228.817" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7bc652ba532122e980608df75011d6d9]
+link Medical Receptionist to CP--><g id="link_Medical Receptionist_CP"><path d="M125.253,209.555 C150.713,230.9897 184.338,257.2397 217,276.5 C228.989,283.5695 242.625,290.0031 255.392,295.4127 " fill="none" id="Medical Receptionist-to-CP" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="260.051,297.3586,253.2881,290.1988,255.4373,295.4315,250.2046,297.5807,260.051,297.3586" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[54d42bdd97149dfdca07c4ff60c9b967]
+@startuml
+left to right direction
+
+"Register Patient" as (RP)
+"Unregister Patient" as (URP)
+"View Patient Info." as (VPI)
+"Transfer Data" as (TD)
+"Contact Patient" as (CP)
+
+
+:Medical Receptionist: - -> (RP)
+
+:Medical Receptionist: - -> (URP)
+
+:Medical Receptionist: - -> (VPI)
+
+:Medical Receptionist: - -> (TD) 
+
+:Medical Receptionist: - -> (CP)
+@enduml
+
+PlantUML version 1.2022.14beta6(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
