@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="428px" preserveAspectRatio="none" style="width:1030px;height:428px;background:#F9F9F9;" version="1.1" viewBox="0 0 1030 428" width="1030px" zoomAndPan="magnify"><defs/><g><rect fill="#F9F9F9" height="428" style="stroke:none;stroke-width:1.0;" width="1030" x="0" y="0"/><g id="elem_RP"><ellipse cx="86.1963" cy="163.4393" fill="#F1F1F1" rx="80.1963" ry="18.4393" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="25.1039" y="166.7979">Register patient</text></g><g id="elem_VPI"><ellipse cx="288.9744" cy="163.3949" fill="#F1F1F1" rx="87.4744" ry="19.8949" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="220.9744" y="166.2416">View Personal Info.</text></g><g id="elem_VR"><ellipse cx="956.1011" cy="402.6202" fill="#F1F1F1" rx="68.6011" ry="16.1202" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="908.6011" y="406.3678">View Record</text></g><g id="elem_ER"><ellipse cx="784.8142" cy="402.2628" fill="#F1F1F1" rx="66.8142" ry="15.7628" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="739.8142" y="406.0104">Edit Record</text></g><g id="elem_SC"><ellipse cx="593.8518" cy="402.5704" fill="#F1F1F1" rx="88.3518" ry="20.0704" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="524.8518" y="405.417">Setup Consultation</text></g><g id="elem_ES"><ellipse cx="190.0271" cy="402.6054" fill="#F1F1F1" rx="81.0271" ry="18.6054" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="128.2415" y="405.8718">Export Statistics</text></g><g id="elem_GR"><ellipse cx="387.8658" cy="402.2732" fill="#F1F1F1" rx="81.8658" ry="18.7732" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="325.3805" y="405.4463">Generate Report</text></g><!--MD5=[a3b1769c041d70c27c998c9b7d2f8870]
+entity Medical Receptionist--><g id="elem_Medical Receptionist"><ellipse cx="187" cy="22" fill="#191919" rx="16" ry="16" style="stroke:#191919;stroke-width:1.5;"/><path d="M187,42 C191,42 194,42 198,38 C206,38 214,46 214,54 L214,58 C214,62 210,66 206,66 L168,66 C164,66 160,62 160,58 L160,54 C160,46 168,38 176,38 C180,42 183,42 187,42 " fill="#191919" style="stroke:#191919;stroke-width:1.5;"/><text fill="#191919" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="111.5" y="80.4951">Medical Receptionist</text></g><!--MD5=[327d8b0cc9017ef0d2f4054fa6547e20]
+entity Manager--><g id="elem_Manager"><ellipse cx="289" cy="261" fill="#191919" rx="16" ry="16" style="stroke:#191919;stroke-width:1.5;"/><path d="M289,281 C293,281 296,281 300,277 C308,277 316,285 316,293 L316,297 C316,301 312,305 308,305 L270,305 C266,305 262,301 262,297 L262,293 C262,285 270,277 278,277 C282,281 285,281 289,281 " fill="#191919" style="stroke:#191919;stroke-width:1.5;"/><text fill="#191919" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="258.5" y="319.4951">Manager</text></g><!--MD5=[c8b2cb7ab209025f476c1467c68b906a]
+entity Nurse--><g id="elem_Nurse"><ellipse cx="870" cy="261" fill="#191919" rx="16" ry="16" style="stroke:#191919;stroke-width:1.5;"/><path d="M870,281 C874,281 877,281 881,277 C889,277 897,285 897,293 L897,297 C897,301 893,305 889,305 L851,305 C847,305 843,301 843,297 L843,293 C843,285 851,277 859,277 C863,281 866,281 870,281 " fill="#191919" style="stroke:#191919;stroke-width:1.5;"/><text fill="#191919" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="850" y="319.4951">Nurse</text></g><!--MD5=[5a5d35bcfc46556bdff8e646cc6c81c2]
+entity Doctor--><g id="elem_Doctor"><ellipse cx="686" cy="261" fill="#191919" rx="16" ry="16" style="stroke:#191919;stroke-width:1.5;"/><path d="M686,281 C690,281 693,281 697,277 C705,277 713,285 713,293 L713,297 C713,301 709,305 705,305 L667,305 C663,305 659,301 659,297 L659,293 C659,285 667,277 675,277 C679,281 682,281 686,281 " fill="#191919" style="stroke:#191919;stroke-width:1.5;"/><text fill="#191919" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="661" y="319.4951">Doctor</text></g><!--MD5=[0b2e1bdf6a59e43c8249186a1d50d455]
+link Medical Receptionist to RP--><g id="link_Medical Receptionist_RP"><path d="M153.649,83.8 C137.228,102.903 118.062,125.2 104.3319,141.173 " fill="none" id="Medical Receptionist-to-RP" style="stroke:#191919;stroke-width:1.0;"/><polygon fill="#191919" points="100.9632,145.092,109.8628,140.8734,104.2221,141.2999,103.7955,135.6592,100.9632,145.092" style="stroke:#191919;stroke-width:1.0;"/></g><!--MD5=[495522506f2ec251e2372fe4972c92a6]
+link Medical Receptionist to VPI--><g id="link_Medical Receptionist_VPI"><path d="M220.681,83.8 C236.837,102.41 255.623,124.051 269.402,139.924 " fill="none" id="Medical Receptionist-to-VPI" style="stroke:#191919;stroke-width:1.0;"/><polygon fill="#191919" points="272.793,143.83,269.9145,134.4112,269.5156,140.054,263.8728,139.6551,272.793,143.83" style="stroke:#191919;stroke-width:1.0;"/></g><!--MD5=[ed621f6b5584c12f6fe9034aeb423417]
+link VPI to Manager--><g id="link_VPI_Manager"><path d="M289,188.773 C289,203.044 289,221.516 289,238.248 " fill="none" id="VPI-Manager" style="stroke:#191919;stroke-width:1.0;"/><polygon fill="#191919" points="289,183.64,285,192.64,289,188.64,293,192.64,289,183.64" style="stroke:#191919;stroke-width:1.0;"/><polygon fill="#191919" points="289,243.379,293,234.379,289,238.379,285,234.379,289,243.379" style="stroke:#191919;stroke-width:1.0;"/></g><!--MD5=[da7b30aa23110f46a8618fa09187983b]
+link Manager to ES--><g id="link_Manager_ES"><path d="M258.489,320.213 C241.938,339.8559 222.05,363.4612 207.979,380.1609 " fill="none" id="Manager-to-ES" style="stroke:#191919;stroke-width:1.0;"/><polygon fill="#191919" points="204.533,384.2512,213.3907,379.9453,207.7544,380.4273,207.2724,374.791,204.533,384.2512" style="stroke:#191919;stroke-width:1.0;"/></g><!--MD5=[dc3b47018c8cc6afff16c70ead1427a1]
+link Manager to GR--><g id="link_Manager_GR"><path d="M319.511,320.213 C335.852,339.6073 355.447,362.8642 369.484,379.5235 " fill="none" id="Manager-to-GR" style="stroke:#191919;stroke-width:1.0;"/><polygon fill="#191919" points="372.927,383.6104,370.1876,374.1502,369.7056,379.7865,364.0693,379.3045,372.927,383.6104" style="stroke:#191919;stroke-width:1.0;"/></g><!--MD5=[c13db54099e6e09eab2947522a7bdf72]
+link Nurse to VR--><g id="link_Nurse_VR"><path d="M898.398,322.7995 C912.977,342.7186 930.097,366.1096 941.862,382.1842 " fill="none" id="Nurse-to-VR" style="stroke:#191919;stroke-width:1.0;"/><polygon fill="#191919" points="945.032,386.5151,942.9436,376.8902,942.0787,382.4805,936.4883,381.6156,945.032,386.5151" style="stroke:#191919;stroke-width:1.0;"/></g><!--MD5=[ff4ba8457b102832a93d26ca298701fd]
+link Nurse to ER--><g id="link_Nurse_ER"><path d="M841.932,322.7995 C827.523,342.7186 810.602,366.1096 798.973,382.1842 " fill="none" id="Nurse-to-ER" style="stroke:#191919;stroke-width:1.0;"/><polygon fill="#191919" points="795.84,386.5151,804.3559,381.5674,798.7705,382.4639,797.874,376.8786,795.84,386.5151" style="stroke:#191919;stroke-width:1.0;"/></g><!--MD5=[fd559f52c65e382f1382f302d94680ce]
+link Doctor to VR--><g id="link_Doctor_VR"><path d="M714.639,296.463 C764.306,318.078 866.279,362.4547 920.412,386.0127 " fill="none" id="Doctor-to-VR" style="stroke:#191919;stroke-width:1.0;"/><polygon fill="#191919" points="925.18,388.0877,918.5244,380.828,920.5955,386.0921,915.3314,388.1632,925.18,388.0877" style="stroke:#191919;stroke-width:1.0;"/></g><!--MD5=[0bcf7ddff6dd4ad06a43cdb6bedf3bc7]
+link Doctor to ER--><g id="link_Doctor_ER"><path d="M714.635,317.986 C732.324,338.98 754.363,365.1384 769.016,382.5285 " fill="none" id="Doctor-to-ER" style="stroke:#191919;stroke-width:1.0;"/><polygon fill="#191919" points="772.574,386.7524,769.8346,377.2922,769.3526,382.9285,763.7163,382.4465,772.574,386.7524" style="stroke:#191919;stroke-width:1.0;"/></g><!--MD5=[8b3cfd9c1e5ca8d02604d8d4904bf6db]
+link Doctor to GR--><g id="link_Doctor_GR"><path d="M657.427,295.266 C605.32,315.812 494.526,359.4972 432.472,383.9647 " fill="none" id="Doctor-to-GR" style="stroke:#191919;stroke-width:1.0;"/><polygon fill="#191919" points="427.724,385.8371,437.5639,386.2565,432.3754,384.0028,434.6291,378.8143,427.724,385.8371" style="stroke:#191919;stroke-width:1.0;"/></g><!--MD5=[8cf8c486d4b884d846ad3b4c66d9fe2c]
+link Doctor to SC--><g id="link_Doctor_SC"><path d="M657.395,320.534 C642.515,339.5377 624.788,362.1789 611.867,378.6805 " fill="none" id="Doctor-to-SC" style="stroke:#191919;stroke-width:1.0;"/><polygon fill="#191919" points="608.691,382.7376,617.3887,378.1169,611.7733,378.8007,611.0895,373.1853,608.691,382.7376" style="stroke:#191919;stroke-width:1.0;"/></g><!--MD5=[a901fe63db8dcb0955008405bc8e7eb5]
+@startuml
+!theme mars
+skinparam actorStyle awesome
+usecase "Register patient" as RP
+usecase "View Personal Info." as VPI
+usecase "View Record" as VR
+usecase "Edit Record" as ER
+usecase "Setup Consultation" as SC
+usecase "Export Statistics" as ES
+usecase "Generate Report" as GR
+
+:Medical Receptionist: - -> (RP)
+:Medical Receptionist: - -> (VPI)
+(VPI) <- -> :Manager:
+:Manager: - -> (ES)
+:Manager: - -> (GR)
+:Nurse: - -> (VR)
+:Nurse: - -> (ER)
+:Doctor: - -> (VR)
+:Doctor: - -> (ER)
+:Doctor: - -> (GR)
+:Doctor: - -> (SC)
+@enduml
+
+@startuml
+skinparam BackgroundColor F9F9F9
+skinparam shadowing false
+skinparam RoundCorner 7
+skinparam ArrowColor 191919
+skinparam FontColor 191919
+skinparam SequenceLifeLineBorderColor 393939
+skinparam SequenceGroupHeaderFontColor 191919
+skinparam SequenceGroupFontColor 393939
+skinparam SequenceGroupBorderColor 393939
+skinparam SequenceGroupBorderThickness 1
+
+skinparam sequenceDivider {
+    BorderColor 191919
+    BorderThickness 1
+    FontColor 191919
+}
+
+skinparam participant {
+    BackgroundColor E55756
+    BorderColor 191919
+    FontColor F9F9F9
+    BorderThickness 1.5
+}
+
+skinparam database {
+    BackgroundColor A4DBD8
+    BorderColor 191919
+    FontColor 191919
+}
+
+skinparam entity {
+    BackgroundColor EFBABC
+    BorderColor 191919
+    FontColor 191919
+}
+
+skinparam note {
+    BackgroundColor e5e5e5
+    BorderColor 191919
+    FontColor 191919
+    BorderThickness 1.5
+}
+
+skinparam actor {
+    BackgroundColor 191919
+    BorderColor 191919
+    FontColor 191919
+}
+
+skinparam boundary {
+    BackgroundColor EFBABC
+    BorderColor 191919
+    FontColor 191919
+}
+
+skinparam control {
+    BackgroundColor EFBABC
+    BorderColor 191919
+    FontColor 191919
+}
+
+skinparam collections {
+    BackgroundColor E55756
+    BorderColor 191919
+    FontColor 191919
+    BorderThickness 1.5
+}
+
+skinparam queue {
+    BackgroundColor E55756
+    BorderColor 191919
+    FontColor FFF
+    BorderThickness 1.5
+}
+skinparam actorStyle awesome
+usecase "Register patient" as RP
+usecase "View Personal Info." as VPI
+usecase "View Record" as VR
+usecase "Edit Record" as ER
+usecase "Setup Consultation" as SC
+usecase "Export Statistics" as ES
+usecase "Generate Report" as GR
+
+:Medical Receptionist: - -> (RP)
+:Medical Receptionist: - -> (VPI)
+(VPI) <- -> :Manager:
+:Manager: - -> (ES)
+:Manager: - -> (GR)
+:Nurse: - -> (VR)
+:Nurse: - -> (ER)
+:Doctor: - -> (VR)
+:Doctor: - -> (ER)
+:Doctor: - -> (GR)
+:Doctor: - -> (SC)
+@enduml
+
+PlantUML version 1.2022.13beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
