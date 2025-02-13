@@ -120,10 +120,127 @@ math: true
 
 - **Problem tracking**, where support is provided to allow users to report bugs and other problems, and to allow all developers to see who is working on these problems and when they are fixed. 
 
+
 ---
 
-## What does Open Source Mean?
+## FOSS vs FLOSS
 
+Reuse; legal and goodwill
+
+- **FOSS**, or “Free and Open Source Software”, focuses on the practical benefits of collaboration and openness. By framing software freedom in terms of operational advantages, FOSS appeals to businesses and governments prioritising innovation and efficiency.
+
+- **FLOSS**, standing for “Free/Libre and Open Source Software” possesses the term “Libre” to clarify that “free” refers to freedom, not cost. This distinction aligns FLOSS with a broader vision of inclusivity, ethics, and empowerment.
+
+-----
+
+## FOSS vs FLOSS
+
+<table style="font-size:24px">
+<tr>
+<td>
+Aspect
+</td>
+<td>
+FOSS
+</td>
+<td>
+FLOSS
+</td>
+</tr>
+<tr>
+<td>
+Legal differences
+</td>
+<td>
+<li> Emphasises open source licenses like MIT, GPL, and Apache, which grant freedom to use, modify, and distribute software. 
+
+<li> Focuses on compliance with specific open source licensing requirements. 
+
+<li>Legal discussions often frame “freedom” in terms of user rights under open source licensing.
+</td>
+<td>
+<li>Includes the same legal principles as FOSS but with a stronger emphasis on “Libre” to highlight freedom from proprietary restrictions.
+
+<li>More explicit in communicating the ethical values behind these rights, especially in regions or systems with a history of restrictive IP practices.
+
+<li>Advocates for ensuring software freedom as a legal norm in addition to license compliance
+</td>
+</tr>
+</table>
+
+
+----
+
+## FOSS vs FLOSS
+
+<table style="font-size:24px">
+<tr>
+<td>
+Aspect
+</td>
+<td>
+FOSS
+</td>
+<td>
+FLOSS
+</td>
+</tr>
+<tr>
+<td>
+Technical differences
+</td>
+<td>
+<li> Focuses on technical collaboration through accessible source code. 
+
+<li> Prioritises practical benefits such as software quality, efficiency, and innovation enabled by open development. 
+
+</td>
+<td>
+<li>Includes the same technical benefits as FOSS but extends the scope to advocate for greater inclusivity in development.
+
+<li>Emphasises removing barriers to access, particularly in underrepresented regions and communities.
+
+</td>
+</tr>
+</table>
+
+---
+
+## FOSS vs FLOSS
+
+<table style="font-size:24px">
+<tr>
+<td>
+Aspect
+</td>
+<td>
+FOSS
+</td>
+<td>
+FLOSS
+</td>
+</tr>
+<tr>
+<td>
+Public policy differences	
+</td>
+<td>
+<li> Typically associated with pragmatic policies that promote economic benefits of open source, such as reducing costs in government IT procurement. 
+
+<li> Appeals to governments and organisations focused on innovation and collaboration without strong ethical framing.
+
+<li>Often aligns with digital economy initiatives and tech-sector growth strategies.
+
+</td>
+<td>
+<li>Advocates for policies explicitly embedding the principle of digital freedom, beyond economic efficiency.
+
+<li>Promotes access to technology as a right, particularly for underserved communities, aligning with broader social justice and human rights initiatives.
+
+<li>More appealing to policymakers in regions where inclusivity and access to information are central goals.
+</td>
+</tr>
+</table>
 
 ---
 
@@ -181,10 +298,95 @@ math: true
 
 ----
 
+## Types of Software Licenses
+
+<table style="font-size:22px">
+
+  <tr>
+    <th>Public Domain License</th>
+    <th>LGPL</th>
+    <th>Permissive</th>
+    <th>Copyleft</th>
+    <th>Proprietary</th>
+  </tr>
+  <tr>
+    <td>Anyone is free to use and modify the software</td>
+    <td>You can link to open source libraries within your own software<br><br>Resulting code can be licensed under any other type of license</td>
+    <td>Few restrictions or requirements for the distribution or modifications to the software</td>
+    <td>Restrictive - known as reciprocal licenses</td>
+    <td>Most restrictive - Ineligible for copying, modifying, or distribution</td>
+  </tr>
+</table>
+
+----
+
+
+## License Table
+
+![w:1050 center](../../figures/license_table.png)
+
+<div align=center style="font-size:20px">
+
+[https://www.gieson.com/school/license/](https://www.gieson.com/school/license/)
+
+</div>
+
+----
+
 ## License models
+
+<div style="font-size:22px">
 
 - The GNU General Public License (GPL). This is a so-called ‘reciprocal’ license that means that if you use open source software that is licensed under the GPL license, then you must make that software open source. 
 
 - The GNU Lesser General Public License (LGPL) is a variant of the GPL license where you can write components that link to open source code without having to publish the source of these components. 
 
 - The Berkley Standard Distribution (BSD) License. This is a non-reciprocal license, which means you are not obliged to re-publish any changes or modifications made to open source code. You can include the code in proprietary systems that are sold.
+
+- MIT License: This is a permissive open-source license originating from the Massachusetts Institute of Technology (MIT). This license allows users to freely use, modify, and distribute the software. It is non-reciprocal, meaning you are not required to release the source code of any modifications. The software can be included in proprietary systems that are sold, as long as the original copyright notice and license terms are included in all copies or substantial portions of the software
+
+</div>
+
+----
+
+## Examples of FLOSS/FOSS/OSSS 
+
+<div style="font-size:22px">
+
+1. Linux Kernel
+     - License: GNU General Public License (GPL) v2
+
+2. Mozilla Firefox
+      - License: Mozilla Public License (MPL) 2.0
+
+3. LibreOffice
+      - License: Mozilla Public License (MPL) 2.0
+
+4. Apache HTTP Server
+      - License: Apache License 2.0
+
+5. Python
+      - License: Python Software Foundation License
+
+</div>
+
+----
+
+
+## Licenses with GitHub
+
+<div style="font-size:20px">
+
+- GitHub lets you pick a licence and generates the License file or you can add it yourself manually
+
+</div>
+
+</div>
+
+![bg right:50% 100%](../../figures/github_repo_license.png)
+
+<div style="padding-left:22px">
+
+![w:450](../../figures/github_repo_get_license.png)
+
+</div>
