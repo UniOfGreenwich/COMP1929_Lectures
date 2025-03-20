@@ -276,3 +276,201 @@ jobs:
 - **Common Issues**:
   - Missing secrets or tokens.
   - Incorrect syntax in YAML files.
+
+---
+
+## Code Coverage
+
+- Code coverage is a metric used to measure the effectiveness of software testing. It refers to the percentage of code lines or functions that are executed by automated tests. 
+
+- By measuring code coverage, developers can identify areas of code that are not covered by tests, and ensure that their tests are comprehensive and effective. A high code coverage percentage indicates that most of the code has been tested and any defects are likely to be caught early. 
+
+- Code coverage is an important aspect of software testing and is often used in conjunction with other testing techniques. Want to know more about: Testing code coverage
+
+---
+
+## A Program & its Control Flow Graph
+
+```py
+s0: z = input()
+s1: x = input()
+s2: if x > 5:
+s3:   y = x * 5
+    else
+s4:   y = z / 5
+s5: print(y)
+s6: return
+```
+
+- Each node is a statement
+
+- Each solid edge is control flow edge between two statements
+
+
+
+![bg right:30% 50%](../../figures/CFG.png)
+
+---
+
+## Node and Edge Coverage*
+
+- **Node (Statement) Coverage**
+  - Fraction of graph nodes covered by tests
+  - Testing Goal: Every node should executed at least once
+
+- **(Control Flow) Edge Coverage**
+  - Fraction of graph edges covered by tests
+  - Testing Goal: Every edge should executed at least once
+
+---
+
+## (Control Flow) Path Coverage*
+
+- **Path** is a sequence of nodes in a graph such that consecutive ndoes in the path are connected by a edge in the graph
+- **(Control Flow) Path Coverage**
+  - Fraction of graph paths convered by tests
+  - How can we deal with program loops, i.e graphs with infinite number of paths?
+
+![bg right:30% 30%](../../figures/CFG_path_coverage.png)
+
+---
+
+## (Control Flow) Path Coverage*
+
+- **(Control Flow) Path Coverage - Testing Goal**
+  - Every path between every pai of nodes should be executed (*may lead to redunancy*)
+  - Every path between source and sinks should be executed.
+    - Ideal for programs without loops
+  - Sufficient number of paths between source and sink nodes are executed such that all edges are executed
+  - Every finite path between source and sinks should be executed such that each loops is executed at least once (*when all paths are considered*)
+    - Good enough for programs with loops
+
+---
+
+## (Control Flow) Path Coverage*
+
+- **(Control Flow) Path Coverage**
+  - What about programs without sinks?
+  - Every finite path between source and every node is excuted with each loop executed at least once (*when all paths are considered*)
+  - What about infeasible paths?
+
+![bg right:30% 50%](../../figures/CFG_path_coverage_sinks.png)
+
+---
+
+## A Program & its Data Flow Graph
+
+```py
+s0: z = input()
+s1: x = input()
+s2: if x > 5:
+s3:   y = x * 5
+    else
+s4:   y = z / 5
+s5: print(y)
+s6: return
+```
+
+- Each node is a statement
+
+- Each solid edge is control flow edge between two statements
+
+- Each dashed edge is the data flow between two statements (from definition of a variable to its use)
+
+![bg right:30% 90%](../../figures/DFG.png)
+
+---
+
+## Data Flow Coverage*
+
+- Fraction of def-use edges covered by tests
+- Testing Goal: Every def-use edge should be executed at least once
+
+<div style="padding-top:50px">
+
+</div>
+
+- How well will this work in case of programs with pointers and references?
+- Can we detect all def-use edges?
+- What about infeasible def-use edges?
+- What about in case of programs written in OOP?
+
+---
+
+## Which is better?
+
+![](../../figures/which_coverage.png)
+
+<!--
+
+1. With 2 (red) paths we get 100% node and edge covereage, but miss exercising s2-s6 data flow edge?
+
+2. With 2 (red) paths we get 100% node and edge covereage, but miss exercising s3-s6 data flow edge?
+
+3. With 2 (red) paths we get 100% data flow coverage (s2-s6 and s3-s6) but miss exercising s5 node
+
+4. With 2 (red) paths we get 100% node, edge covereage, and data flow coverage, but with some redunancy
+
+5. With 3 (red) paths we get 100% node, edge covereage, and data flow coverage, but with lesser redunancy
+
+-->
+
+---
+
+## Branch Coverage*
+
+- Fractio of branches (edges) covered by tests
+- Testing Goal: Every branch should be executed at least once
+
+---
+
+## Condition Coverage*
+
+<div style="font-size:22px">
+
+- Fraction of boolean expression valuations covered by tests
+- Testing Goal:
+  - Every simple boolean expression should be evaulated to both true and false
+  - Every compound boolean expression should be evaulated to both true and false
+
+</div>
+
+![bg right:50% 90% ](../../figures/boolean_experssion_coverage.png)
+
+---
+
+## Coverage Tools
+
+![w:950 center](../../figures/Code_coverage_tools.png)
+
+---
+
+## Coverage Tools - Python 
+
+
+- [Coverage.py](https://coverage.readthedocs.io/en/v4.5.x/): A free tool for monitoring the coverage of your Python apps, monitoring every bit of your code to find what was executed and what was not.
+
+- [pytest-cov](https://pypi.org/project/pytest-cov/): A free language plug-in to produce a coverage report of your app.
+
+- [PyCharm’s integrated coverage tool](https://www.jetbrains.com/help/pycharm/code-coverage.html): With the professional version of the PyCharm IDE, you have built-in support for performing coverage checks on your code with low runtime overhead. The tool runs $199 per year for every user.
+
+--- 
+
+## Coverage Tools - JavaScript 
+
+
+- [Istanbul](https://istanbul.js.org/): The most famous JS tool for code coverage. Supporting unit tests, server-side functional tests, and browser tests. And it’s all for free!
+
+- [Blanket](https://github.com/alex-seville/blanket): A simple, free-to-use JS library designed for both the web and the server-side of JavaScript.
+
+- [jscoverage](https://www.npmjs.com/package/jscoverage): Written purely in JavaScript, this free tool is an ideal companion for verifying code coverage both on the browser and server-side of your application.
+  
+---
+
+## Coverage Tools - Rust
+
+- [Tarpaulin](https://github.com/xd009642/tarpaulin): A free Rust library providing source code line coverage functionalities. The product is still in an early stage of development, yet it’s already proving a good choice for testing Rust applications.
+
+- [grcov](https://github.com/mozilla/grcov): A free library collecting and aggregating code coverage information for all the Rust files in your project.
+
+- [kcov](https://github.com/SimonKagstrom/kcov): A free BSD/Linux/OS X code coverage tester for compiled languages, as well as Python and Bash.
