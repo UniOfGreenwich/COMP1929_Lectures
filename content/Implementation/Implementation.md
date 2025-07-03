@@ -32,7 +32,7 @@ marp: true
 math: true
 ---
 
-<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/COMP1929-Lectures/raw/gh-pages/content/Implmentation/Implementation.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/COMP1929_Lectures/raw/main/content/Implmentation/Implementation.pdf)" -->
 
 # Implementation
 
@@ -42,7 +42,7 @@ math: true
 
     Credits: 15
 
-    Module Team:  Seb Blair &  Fayaz Iqbal
+    Module Leader: Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA
 
 ---
 

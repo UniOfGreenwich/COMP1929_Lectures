@@ -1,77 +1,111 @@
 ---
+marp: true
+---
+
+<!--
+# Metadata
 title: Continuous Integration and Continuous Deployment
-description: Continuous Integration and Continuous Deployment
-class: gaia
-_class:
-  - lead
-  - invert
-style: |
-    #img-right{
-      float: right;
-    }
-    img[alt~="center"] {
-      display: block;
-      margin: 0 auto;
-    }
-    table {
-        border-collapse: collapse;
-        font-size: 30px;
-      }
-    table, th,tr, td {
-         border: none!important; 
-          vertical-align: middle;
-      }
-    section::after {
-      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
-    }
-footer: COMP1929  | Software Engineering
-size: 16:9
+author: Seb Blair (CompEng0001)
+description: Lecture slides on Continuous Integration and Continuous Deployment
+keywords: Continuous Integration and Continuous Deployment
+lang: en
+
+# Slide styling
+theme: uog-theme
+_class: lead title
 paginate: true
 _paginate: false
-marp: true
-math: true
----
+transition: fade 250ms
+
+style: |
+  header em { font-style: normal; view-transition-name: header; }
+  header strong { font-weight: inherit; view-transition-name: header2; }
+  header:not:has(em) { view-transition-name: header; }
+-->
+
+<style scoped>
+h1 {
+view-transition-name: header;
+display: flex;
+align-items: center;
+margin: 0 auto;
+}
+</style>
 
 # Continuous Integration and Continuous Deployment
 
-    Module Code: COMP1929 
-    
-    Module Name: Software Engineering
+<div align=center style="font-size:76px; padding-left:300px;padding-right:300px;" >
 
-    Credits: 15
+```rs
+let module = Module {
+    code: "COMP1929".to_string(),
+    name: "Software Engineering".to_string(),
+    credits: 15,
+    module_leader: "Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA".to_string(),
+}
+```
 
-    Module Team:  Seb Blair &  Fayaz Iqbal
-
-<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/COMP1929-Lectures/raw/gh-pages/content/cicd/cicd.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/COMP1929_Lectures/raw/main/content/cicd/cicd.pdf)" -->
 
 
 ---
 
+<style scoped>
+h1 {
+view-transition-name: header;
+display: flex;
+align-items: center;
+margin: 0 auto;
+}
+</style>
+
+
+<!-- header: "_CICD_" -->
+
 ## Software Build Technology and CI/CD
+
+<div>
 
 - What do we mean by a Build?
   - Assemble the correct source code depending on 
     - Hardware
     - Operating System
     - Application Requirements 
+  <br>
   - Compile
+  <br> 
   - Perform tests and QA on source code and binary code
+  <br>
   - Package source code and binary code for different production systems
+  <br>
   - Create documentation
+
+</div>
 
 ---
 
 ## Build Automation
 
+
+<br>
+
 - Build automation is the act of scripting or automating a wide variety of tasks that software developers do in their day-to-day activities to achieve the build process.
 
+<br>
+
 - This is one of the important practices used in agile projects
+
+<br>
 
 - Automation is not an option, it is a requirement 
 
 ---
 
 ## Advantages of Build Automation
+
+
+<br>
+<br>
 
 - Improve development process; product quality and reduce the cost of QA
   - Accelerate the compile and link processing
@@ -87,9 +121,15 @@ math: true
 
 ## Types of Build Automation
 
+<br>
+
 - On-demand automation such as a user running a script at the command line
 
+<br>
+
 - Scheduled automation such as a continuous integration server running a nightly build
+
+<br>
 
 - Triggered automation such as a continuous integration server running a build on every commit to a version control system
 
@@ -97,9 +137,15 @@ math: true
 
 ## Continuous Integration
 
+<br>
+
 - This is a development practice that calls upon development teams to ensure that a build and subsequent testing is conducted for every code change made to a software program.
 
+<br>
+
 - Continuous integration was first introduced in the year 2001 with the software known as **Cruise Control**
+
+<br>
 
 - Continuous Integration has become a key practice in any software organisation
 
@@ -107,23 +153,11 @@ math: true
 
 ## Continuous Integration
 
-- First, a developer commits the code to the version control repository. 
+<div style="padding-top:50px">
 
-- Meanwhile, the Continuous Integration server on the integration build machine polls the source code repository for changes (e.g., every few minutes). 
+![w:1400 drop-shadow](../../figures/CI_Flow.png "centered")
 
-- Soon after a commit occurs, the Continuous Integration server detects that changes have occurred in the version control repository 
-
-- The Continuous Integration server retrieves the latest copy of the code from the repository and then executes a build script, which integrates the software
-
----
-
-## Continuous Integration
-
-- The Continuous Integration server generates feedback by e-mailing build results to the specified project members.
-
-- Unit tests are then carried out if the build of that project passes. If the tests are successful, the code is ready to be deployed to either the staging or production server.
-
-- Th e Continuous Integration server continues to poll for changes in the version control repository and the whole process repeats.
+</div>
 
 ---
 
@@ -131,7 +165,9 @@ math: true
 
 - Continuous Integration:
   - “Developers practicing continuous integration merge their changes back to the main branch as often as possible. The developer's changes are validated by creating a build and running automated tests against the build. By doing so, you avoid the integration hell that usually happens when people wait for release day to merge their changes into the release branch.”
-  - 
+
+<br>
+
 - Continuous Deployment:
   - “…every change that passes all stages of your production pipeline is released to your customers. There's no human intervention, and only a failed test will prevent a new change to be deployed to production.”
 
@@ -139,15 +175,35 @@ math: true
 
 ## CI/CD Pipelines
 
+<!-- <div class="columns-2" >
+<div style="padding-top:250px">
+
 - Modern CI and CD practices are referred to as a CI/CD pipeline and can handle every stage of the build process from commit to deployment.
 
-![w:1100 center](../../figures/cicdPipelines.png)
+</div>
+<div style="padding-top:225px">
+
+![w:900 invert](../../figures/cicdPipelines.png)
+
+</div>
+</div> -->
+
+<div style="padding-top:70px">
+
+- Modern CI and CD practices are referred to as a CI/CD pipeline and can handle every stage of the build process from commit to deployment.
+
+<div style="padding-top:20px">
+
+![w:1100 invert](../../figures/cicdPipelines.png "centered")
+
+</div>
+</div>
 
 ---
 
 ## CI/CD Pipelines
 
-![w:750 center](../../figures/cicdIndicator.png)
+![w:1400](../../figures/jenkins-quickstart-dashboard.png "centered")
 
 ---
 
@@ -164,23 +220,22 @@ math: true
 - Travis CI
 - TeamCity
 
-
 ---
 
 ## How GitHub Actions Work
 
-<table style="width:100%; font-size:25px"">
-<tr>
-<td style="width:60%" >
+<div class="columns-2" >
+<div style="padding-top:150px">
+
 
 1. **Triggers**: Define events to start workflows (e.g., `push`, `pull_request`, `schedule`).
 2. **Workflow**: A collection of jobs defined in a YAML file.
 3. **Jobs**: Independent units, each with multiple steps.
 4. **Actions**: Individual tasks in a workflow.
 
-</td>
 
-<td>
+</div>
+<div style="padding-top:80px">
 
 ```yaml
 on:
@@ -203,40 +258,102 @@ jobs:
         run: npm test
 ```
 
-</td>
-</tr>
-</table>
-
+</div>
+</div>
 
 ---
 
 ## Benefits of GitHub Actions
 
+<div style="padding-top:50px">
+
 - **Automation**:
   - Automated builds, tests, and deployments.
+<br>
 - **Scalability**:
   - Run workflows in parallel.
+<br>
 - **Integration**:
   - Connect with cloud providers, databases, and third-party tools.
+<br>
 - **Community Support**:
   - Use and contribute to the GitHub Marketplace.
+
+</div>
 
 ---
 
 ## Setting Up GitHub Actions
 
+<div class="columns-2" style="padding-top:50px">
+
+<div>
+
 1. **Create a `.github/workflows` folder**:
    - Store workflow YAML files here.
+<br>
 2. **Define a Workflow**:
    - Specify triggers, jobs, and steps.
+<br>
 3. **Use Marketplace Actions**:
    - Pre-built solutions for common tasks.
+
+<br>
+
+![](../../figures/github-workflows-structure.png "centered")
+
+</div>
+<div>
+
+```yml
+name: deploy-content
+concurrency: deploy-content
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: make build directory
+        run:  mkdir build/ && cp -r figures build/figures
+
+      - name: build index
+        uses: docker://marpteam/marp-cli:latest
+        with:
+          args: index.md -o build/index.html
+        env:
+          MARP_USER: root:root
+
+      - name: build content html
+        uses: docker://marpteam/marp-cli:latest
+        with:
+          args: -I content/ -o build/content/ --html --allow-local-files --theme themes/uog-theme.css
+        env:
+          MARP_USER: root:root
+  
+      - name: deploy content
+        if: ${{ github.event_name == 'push' }}
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: ./build/ 
+```
+
+
+</div>
+</div>
 
 ---
 
 ## Example: Deploying a Static Website
 
-<div style="font-size:22px">
+<div style="font-size:24px; padding-left:300px;padding-right:300px;padding-top:100px;">
 
 ```yaml
 name: Deploy Website
@@ -267,17 +384,105 @@ jobs:
 
 ---
 
+
+## Example: Deploying a Lectures Website
+
+<div style="font-size:24px; padding-left:300px;padding-right:300px;">
+
+```yml
+name: deploy-content
+concurrency: deploy-content
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: make build directory
+        run:  mkdir build/ && cp -r figures build/figures
+
+      - name: build index
+        uses: docker://marpteam/marp-cli:latest
+        with:
+          args: index.md -o build/index.html
+        env:
+          MARP_USER: root:root
+
+      - name: build content html
+        uses: docker://marpteam/marp-cli:latest
+        with:
+          args: -I content/ -o build/content/ --html --allow-local-files --theme themes/uog-theme.css
+        env:
+          MARP_USER: root:root
+  
+      - name: deploy content
+        if: ${{ github.event_name == 'push' }}
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: ./build/ 
+```
+
+---
+
 ## Debugging Workflows
+
+
+<div class="columns-2" >
+<div style="padding-top:150px">
 
 - **Workflow Logs**:
   - Access logs via the Actions tab.
+
 - **Enable Debugging**:
   - Use `ACTIONS_STEP_DEBUG` for detailed logs.
+
 - **Common Issues**:
   - Missing secrets or tokens.
   - Incorrect syntax in YAML files.
 
+</div>
+<div style="padding-right:250px;padding-top:250px">
+
+![w:1000 drop-shadow](../../figures/GH_Actions.png)
+
+</div>
+</div>
+
 ---
+
+<!-- header: "" -->
+<!-- _class: lead -->
+
+<style scoped>
+h1 {
+view-transition-name: header;
+display: flex;
+align-items: center;
+margin: 0 auto;
+}
+</style>
+
+# Code Coverage
+
+---
+
+<!-- header: "_Code Coverage_" -->
+
+<style scoped>
+h1 {
+view-transition-name: header;
+display: flex;
+align-items: center;
+margin: 0 auto;
+}
+</style>
 
 ## Code Coverage
 
@@ -291,6 +496,9 @@ jobs:
 
 ## A Program & its Control Flow Graph
 
+<div class="columns-2">
+<div style="padding-top:100px">
+
 ```py
 s0: z = input()
 s1: x = input()
@@ -302,21 +510,32 @@ s5: print(y)
 s6: return
 ```
 
-- Each node is a statement
+<br>
 
+- Each node is a statement
+<br>
 - Each solid edge is control flow edge between two statements
 
+</div>
+<div>
 
 
-![bg right:30% 50%](../../figures/CFG.png)
+![w:300](../../figures/CFG.png "centered")
+
+</div>
+</div>
 
 ---
 
 ## Node and Edge Coverage*
 
+<br>
+
 - **Node (Statement) Coverage**
   - Fraction of graph nodes covered by tests
   - Testing Goal: Every node should executed at least once
+
+<br>
 
 - **(Control Flow) Edge Coverage**
   - Fraction of graph edges covered by tests
@@ -326,12 +545,22 @@ s6: return
 
 ## (Control Flow) Path Coverage*
 
+
+<div class="columns-2">
+<div style="padding-top:100px">
+
 - **Path** is a sequence of nodes in a graph such that consecutive ndoes in the path are connected by a edge in the graph
 - **(Control Flow) Path Coverage**
   - Fraction of graph paths convered by tests
   - How can we deal with program loops, i.e graphs with infinite number of paths?
 
-![bg right:30% 30%](../../figures/CFG_path_coverage.png)
+</div>
+<div>
+
+![w:200](../../figures/CFG_path_coverage.png "centered")
+
+</div>
+</div>
 
 ---
 
@@ -399,7 +628,11 @@ s6: return
 
 ## Which is better?
 
-![](../../figures/which_coverage.png)
+<div style="padding-top:150px">
+
+![w:1500 drop-shadow](../../figures/which_coverage.png "centered")
+
+</div>
 
 <!--
 
@@ -419,10 +652,8 @@ s6: return
 
 ## Branch Coverage*
 
-- Fractio of branches (edges) covered by tests
+- Fraction of branches (edges) covered by tests
 - Testing Goal: Every branch should be executed at least once
-
----
 
 ## Condition Coverage*
 
@@ -439,18 +670,24 @@ s6: return
 
 ---
 
-## Coverage Tools
+# Coverage Tools
 
-![w:950 center](../../figures/Code_coverage_tools.png)
+![w:1300 drop-shadow](../../figures/Code_coverage_tools.png "centered")
 
 ---
 
 ## Coverage Tools - Python 
 
 
+<br>
+
 - [Coverage.py](https://coverage.readthedocs.io/en/v4.5.x/): A free tool for monitoring the coverage of your Python apps, monitoring every bit of your code to find what was executed and what was not.
 
+<br>
+
 - [pytest-cov](https://pypi.org/project/pytest-cov/): A free language plug-in to produce a coverage report of your app.
+
+<br>
 
 - [PyCharm’s integrated coverage tool](https://www.jetbrains.com/help/pycharm/code-coverage.html): With the professional version of the PyCharm IDE, you have built-in support for performing coverage checks on your code with low runtime overhead. The tool runs $199 per year for every user.
 
@@ -458,10 +695,16 @@ s6: return
 
 ## Coverage Tools - JavaScript 
 
+<br>
+
 
 - [Istanbul](https://istanbul.js.org/): The most famous JS tool for code coverage. Supporting unit tests, server-side functional tests, and browser tests. And it’s all for free!
 
+<br>
+
 - [Blanket](https://github.com/alex-seville/blanket): A simple, free-to-use JS library designed for both the web and the server-side of JavaScript.
+
+<br>
 
 - [jscoverage](https://www.npmjs.com/package/jscoverage): Written purely in JavaScript, this free tool is an ideal companion for verifying code coverage both on the browser and server-side of your application.
   
@@ -469,8 +712,14 @@ s6: return
 
 ## Coverage Tools - Rust
 
+<br>
+
 - [Tarpaulin](https://github.com/xd009642/tarpaulin): A free Rust library providing source code line coverage functionalities. The product is still in an early stage of development, yet it’s already proving a good choice for testing Rust applications.
 
+<br>
+
 - [grcov](https://github.com/mozilla/grcov): A free library collecting and aggregating code coverage information for all the Rust files in your project.
+
+<br>
 
 - [kcov](https://github.com/SimonKagstrom/kcov): A free BSD/Linux/OS X code coverage tester for compiled languages, as well as Python and Bash.

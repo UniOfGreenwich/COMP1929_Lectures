@@ -1,74 +1,110 @@
 ---
+marp: true
+---
+
+<!--
+# Metadata
 title: Kanban
-description: Kanban
-class: gaia
-_class:
-  - lead
-  - invert
-style: |
-    #img-right{
-      float: right;
-    }
-    img[alt~="center"] {
-      display: block;
-      margin: 0 auto;
-    }
-    table {
-        border-collapse: collapse;
-        font-size: 30px;
-      }
-    table, th,tr, td {
-         border: none!important; 
-          vertical-align: middle;
-      }
-    section::after {
-      content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
-    }
-footer: COMP1929  | Software Engineering
-size: 16:9
+author: Seb Blair (CompEng0001)
+description: Lecture slides on Kanban
+keywords: Kanban
+lang: en
+
+# Slide styling
+theme: uog-theme
+_class: lead title
 paginate: true
 _paginate: false
-marp: true
-math: true
----
-<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/COMP1929-Lectures/raw/gh-pages/content/Kanban/kanban.pdf)" -->
+transition: fade 250ms
+
+style: |
+  header em { font-style: normal; view-transition-name: header; }
+  header strong { font-weight: inherit; view-transition-name: header2; }
+  header:not:has(em) { view-transition-name: header; }
+-->
+
+<style scoped>
+h1 {
+view-transition-name: header;
+display: flex;
+align-items: center;
+margin: 0 auto;
+}
+</style>
 
 # Kanban
 
-    Module Code: COMP1929 
-    
-    Module Name: Software Engineering
+<div align=center style="font-size:76px; padding-left:300px;padding-right:300px;" >
 
-    Credits: 15
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/COMP1929_Lectures/raw/main/content/Kanban/kanban.pdf)" -->
 
-    Module Team:  Seb Blair &  Fayaz Iqbal
+```Go
+module := Module{
+	Code:         "COMP1929",
+	Name:         "Software Engineering",
+	Credits:      15,
+	ModuleLeader: "Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA",
+}
+```
 
 ---
+
+<style scoped>
+h1 {
+view-transition-name: header;
+display: flex;
+align-items: center;
+margin: 0 auto;
+}
+</style>
+
+
+<!-- header: "_Kanban_" -->
 
 
 ## Introduction
 
-<div style="font-size:26px">
-
 - Developed by Taiichi Ohno(Industrial Engineer and Businessman) for Toyota automotive. 
+
+<br>
+
 - early 1940's 
+
+<br>
+
 - Simple planning system, the aim of which was to control and manage work and inventory at every stage of production optimally.
+
+<br>
+
 - David J. Anderson who was the first to apply the concept to IT, Software development and knowledge work in general in the year 2004
 
-</div>
-
-![bg right:40% 50% vertical](https://www.nimblework.com/wp-content/uploads/2022/12/Taiichi_Ohno1.webp)
-![bg right:40% 50% vertical](https://opexlearning.com/resources/wp-content/uploads/2014/09/david-j-anderson-leankanban.png)
+![bg right:40% 50% vertical drop-shadow](https://www.nimblework.com/wp-content/uploads/2022/12/Taiichi_Ohno1.webp)
+![bg right:40% 50% vertical drop-shadow](https://opexlearning.com/resources/wp-content/uploads/2014/09/david-j-anderson-leankanban.png)
 
 ---
 
 ## Four Foundational Principles
 
-1. Start with what you are doing now
-2. Agree to pursue incremental, evolutionary change
-3. Initially, respect current roles, responsibilities and job-titles
-4. Encourage acts of leadership at all levels
+<style scoped>ul { list-style: list; padding: 200; }</style>
 
+<div style="padding-top:150px">
+
+[1] Start with what you are doing now
+
+<br>
+
+[2]. Agree to pursue incremental, evolutionary change
+
+<br>
+
+[3] Initially, respect current roles, responsibilities and job-titles
+
+<br>
+
+[4] Encourage acts of leadership at all levels
+
+
+</div>
 
 <!--
 Start with what you are doing now: The Kanban Method (hereafter referred to as just Kanban) strongly emphasizes not making any change to your existing setup/ process right away. Kanban must be applied directly to current workflow. 
@@ -85,12 +121,31 @@ Encourage acts of leadership at all levels: Kanban encourages continuous improve
 
 ## Six Practices of the Kanban Method
 
-1. Visualize the flow of work
-2. Limit WIP (Work in Progress)
-3. Manage Flow
-4. Make Process Policies Explicit
-5. Implement Feedback Loops
-6. Improve Collaboratively, Evolve Experimentally
+<style scoped>ul { list-style: list; padding: 200; }</style>
+
+<div style="padding-top:100px">
+
+[1] Visualize the flow of work
+
+<br>
+
+[2] Limit WIP (Work in Progress)
+
+<br>
+
+[3] Manage Flow
+
+<br>
+
+[4] Make Process Policies Explicit
+
+<br>
+
+[5] Implement Feedback Loops
+
+<br>
+
+[6] Improve Collaboratively, Evolve Experimentally
 
 
 <!--
@@ -102,20 +157,34 @@ Encourage acts of leadership at all levels: Kanban encourages continuous improve
 
 ## Classic Kanban
 
-In a classic Kanban board model, there are three columns, as shown in the picture above:
+In a classic Kanban board model, there are three columns, as shown in the picture right:
+
+<div class="columns-2" style="padding-top:50px">
+<div>
 
 - “To Do”: This column lists the tasks that are not yet started. (aka “backlog”)
 
+<br>
+
 - “Doing”: Consists of the tasks that are in progress.
+
+<br>
   
 - “Done”: Consists of the tasks that are completed
 
-![bg right:50% 90%](../../figures/classicKanban.png)
+</div>
+<div>
+
+![drop-shadow](../../figures/classicKanban.png)
+
+</div>
+</div>
 
 ---
 ## Kanban Diagram
 
-![ w:800 center ](https://kanbanize.com/wp-content/uploads/website-images/kanban-resources/Kanban_board-elements.png)
+
+![ w:1300 drop-shadow](https://kanbanize.com/wp-content/uploads/website-images/kanban-resources/Kanban_board-elements.png "centered")
 
 <!--
 
@@ -136,34 +205,72 @@ Delivery Point – The point in the workflow where work items are considered fin
 
 ## Work-in-Progress (WIP) Limits
 
+<div style="padding-top:100px">
+
 1. Rather than timeboxing, like we do with sprints in Scrum, Kanban is a continuous flow of work,  limited by the constraint on that column of the Kanban board.
 
-![center](../../figures/WIP.png)
+<br>
+
+![drop-shadow](../../figures/WIP.png "centered")
+
+<br>
 
 2. You set your column limits to avoid bottlenecks in your development process. If there is a build up or slow movement in one stage, you can adjust the WIP limits in the columns either side to prevent a build up of stress on a single point in the system.
 
 ---
 
-## Why do we limit WIP?
+## Why/How do we limit WIP?
 
-![w:1100 center ](../../figures/WIP2.png)
-
----
-
-## How to decide WIP limits?
+<div class="columns-2" style="padding-top:10px">
+<div>
 
 - Measure flow
+
+<br>
+
 - Where are your bottlenecks?
+
+<br>
+
 - How do you manage them?
+
+<br>
+
 - Do you throw more engineering resource at one of the stages? If you do, then what impact will that have on the following stage?
+
+<br>
+
 - Redeployment of resource to earlier stages or later stages may be a better way to ensure a constant flow.
+
+</div>
+<div style="padding-top:185px">
+
+![w:900 drop-shadow](../../figures/WIP2.png "centered")
+
+</div>
+</div>
 
 ---
 
 ## Kanban Flow
 
-The concept of Flow is critical and by measuring Flow metrics and working to improve them, you can dramatically improve the speed of your delivery processes while reducing cycle time and improving the quality of your products or services by getting faster feedback from your customers – internal or external.
-![bg right:50% 90%](../../figures/kanbanFlow.png)
+<div class="columns-2" style="padding-top:60px">
+<div>
+
+- The concept of Flow is critical and by measuring Flow metrics and working to improve them. 
+
+<br>
+<br>
+
+- You can dramatically improve the speed of your delivery processes while reducing cycle time and improving the quality of your products or services by getting faster feedback from your customers – internal or external.
+
+</div>
+<div style="padding-top:60px">
+
+![drop-shadow](../../figures/kanbanFlow.png)
+
+</div>
+</div>
 
 <!--
 
@@ -174,74 +281,93 @@ At the core of Kanban is the concept of “Flow”. This means that the cards sh
 
 ## Cumulative Flow Diagrams
 
+<div class="columns-2" >
+<div style="padding-top:300px">
+
 - In Kanban we use cumulative flow diagrams to show how much work we are completing
 
-![w:700 center](../../figures/cumulativeFlow.png)
+</div>
+<div style="padding-top:150px">
+
+![w:700 drop-shadow](../../figures/cumulativeFlow.png)
+
+</div>
+</div>
 
 ---
 
 ## Releasing in Kanban
 
+<div style="padding-top:50px">
+
 - Using Kanban, **continuous deployment** is possible. 
+
+<br>
 
 - You can release a new iteration of your product every day.
 
+<br>
+
 - This has a huge advantage, even over **Scrum**, which pridws itself on releasing early and often
 
+<br>
+
 - Where feedback in **Scrum** can only be gathered at the end of the sprint, meaning any feature built in day one has a feedback lag of *~2 weeks*, new features can Kanban can be tested by users as soon as they are completed.
+
+</div>
 
 ---
 
 ## Kanban for you
 
+
+<div style="padding-top:50px">
+
 - Kanban is a great approach for small projects, it helps you focus on actually finishing features.
+
+<br>
+
 - As an agile methodology, the idea of Kanban is to increase the likelihood that your project is going to be successful.
+
+<br>
+
 - Especially when working on your own, you may be tempted to work on features in an arbitrary fashion eg. half building a form, then realizing you need a database, so half building a database, then building part of the logic, while finishing nothing.
+
+<br>
+
 - Using Kanban, visualizing your work and limiting WIP can help prevent this.
+
+</div>
 
 ---
 
 ## Kanban in your career
 
+<div class="columns-2">
+<div  style="padding-top:10px">
+
 - Aside from fast moving startups or small projects you probably won’t be developing using Kanban.
+
+<br>
+
 - However, a working knowledge of Kanban is in demand 
 
-![](../../figures/kanbanCareer.png)
-
----
-
-## Kanban as a Tool
+<br>
 
 - Rather than look for companies that solely use Kanban, it is important to know that Kanban is a tool that you can utilize.
 
+<br>
+
 - When presented with a project, consider whether Scrum, Kanban or waterfall would fit the project best.
+
+<br>
 
 - A lot of R&D departments will use Kanban due to the lightweight nature of the methodology and the speed at which you can deliver features.
 
----
+</div>
+<div  style="padding-top:150px">
 
-## Kanban in Enterprise
+![w:900 drop-shadow](../../figures/kanbanCareer.png)
 
-- I’ve not seen a good example of Kanban scaling up very well
-
-- Some teams use a modified version of Kanban
-
-- This embraces the Agile mindset of ‘use what works’
-
-- Hybrid approaches such as ScrumBan are relatively popular
-
-- Some corporate management teams do not like Software Development teams using Kanban, as it can be hard to track progress and make estimates.
-
-- This is where Scrum helps.
-
----
-
-## Summary
-
-- Another agile methodology 
-
-- A very different use to Scrum
-
-- Spotify is known for utilizing Kanban amongst other agile methodologies 
-
-- Very good for extremely small teams or even individuals.
+</div>
+</div>

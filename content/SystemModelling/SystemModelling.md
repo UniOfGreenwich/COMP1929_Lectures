@@ -1,6 +1,6 @@
 ---
-title: System Modelling Part 1
-description: System Modelling Part 1
+title: System Modelling 
+description: System Modelling 
 class: gaia
 _class:
   - lead
@@ -32,7 +32,7 @@ marp: true
 math: true
 ---
 
-<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/COMP1929-Lectures/raw/gh-pages/content/SystemModelling/SystemModelling.pdf)" -->
+<!-- _footer: "[Download as a PDF](https://github.com/UniOfGreenwich/COMP1929_Lectures/raw/main/content/SystemModelling/SystemModelling.pdf)" -->
 
 # System Modelling
 
@@ -42,7 +42,7 @@ math: true
 
     Credits: 15
 
-    Module Team:  Seb Blair &  Fayaz Iqbal
+    Module Leader: Seb Blair BEng(H) PGCAP MIET MIHEEM FHEA
 
 ---
 
@@ -91,7 +91,7 @@ Question: Why use graphical models?
 
 ## Process model of involuntary detention using UML activity diagram
 
-![w:1250 center](../../figures/mentcare_subsystems_activity.svg)
+![h:600 center](../../figures/mentcare_subsystems_activity.svg)
 
 <!--
 https://mermaid.live/edit#pako:eNqFlN1u4jAQhV_F8uWKvkBUIaEgBKKgKA5XBFXe2AFvExs5ptqq6rvvjJ0faCjLVezzZXwyc_AnLYyQNKKN407OFT9aXueawE8oKwunjCYvadjxDFHla3h4fi5ORhVyOg1yPJ9HJDa6VLbOYUtIJzUWCItCNfjs0VVi0oisdGkCmnCngCWmxFWqjifXBDLFoqksjBUoza9rzm9qsk0cgSfCPhonawKucr0BuACvgViwJCILpQVpZHGxEmucK1608ixbRmQmauWIM6gtTXNWjldt_Rkb1Ue6QQsNLIIQ4CxLgM4s100pbVsvMRW0izDoXu86y9hyBAZ7385fsfi6ZcwUipOY29b9arvuZKLlX4eMKclatQftoOG7s8BmYIvlUYFbS3Kdt8D-14E8PU1xjGGjGziUfOtHjotu4H7k_p0B6ZSrlxDAgf8gpcN5MMJh69bEH6N0bwIXgwms7V8bmE5KW39j5aoeAl2oO7kPOYoLXjUyInvB9VFac2kO5C6X2Qti2jgyoB2JYqjGkm7PF_abkL3hiyFpw2ZLsiQc4XPlj-DvXFX8dyUPYwgztR8D35sKOTNavD4YMFjwJcdk_13g6D4yEGz5M9E7Gp3gc8Pi_wDb9WNgl96NkjspG9hxnlg8hGbgenm7fiTv0kdql_BdehPEKzeowl-RTmgtbc2VgMv50zeKupOsZU4jeBQcatJcfwHHL86wD13QyEHGJvTi_-XtXU6jEkM2oVIoZ-wm3Pb-0v_6B5zY344
@@ -134,7 +134,7 @@ A use case is shown as an ellipse and the actors involved – as stick figures
 
 ## Tabular description of the  Transfer-data use case 
 
-<table style="font-size:24px">
+<table>
     <thead>
         <tr>
             <th colspan=2>MHC-PMS: Transfer data</th>
@@ -232,7 +232,7 @@ https://www.plantuml.com/plantuml/uml/SoWkIImgAStDuUAoSiiiAYvHS4mkoI-ouh9opCiloK
 
 ## Sequence diagram for View patient information 
 
-![w:820 center](../../figures/mentcare_sequence.svg)
+![center](../../figures/mentcare_sequence.svg)
 
 <!-- 
 https://mermaid.live/edit#pako:eNp1Uk1PwzAM_StWTkO0fyCHSUUFaYLCBBqnXqzEoxFtUtIUhKb9d9yPbe1Ec3Lynp-fHR-EcpqEFA19tWQVpQY_PFa5BT6ogvOQkTYKy1dSVAfjrGnCGTbfGGiZ8Q8Qr9e3WwyGbNjYvZPwbuini2C13aQ3V8oT5oBMHjqljGOFntI7CZ5q5wOsDGMRsFgEu17x5OVE7RKTNhTOmwY7WxJwvNKYvjtbmRFjTo2nNXGKniphGeYAvDxCfwb8yg1rzgYyXuDSNJVsDNsiXBQfks3Tklo8k7v3nj_x2UGiFDXNqGj1EGhanvUEW_xhEYmKfIVG8xIdurdchIIqyoXkUKP_zEVuj8zjkbi3X6uEDL6lSLS1Zulx4YTcI3cZCS7EbWbDVvbLefwD81fjiQ
@@ -281,7 +281,7 @@ https://mermaid.live/edit#pako:eNp1Uk1PwzAM_StWTkO0fyCHSUUFaYLCBBqnXqzEoxFtUtIUh
 
 ## Classes and associations in the MHC-PMS 
 
-![w:1100 h:500 center](../../figures/mentcare_classes_assoc.svg)
+![h:600 center](../../figures/mentcare_classes_assoc.svg)
 
 ---
 
@@ -482,7 +482,7 @@ https://www.plantuml.com/plantuml/uml/RL5DQy904BtlhtXuB4WrGWyUYaBRGoaYpR7sC6u65J
 
 ## Usage of model-driven engineering
 
-<div style="font-size:25px">
+<div style="font-size:20pt">
 
 - Model-driven engineering is still at an early stage of development, and it is unclear whether it will have a significant effect on software engineering practice. 
 
@@ -519,7 +519,7 @@ https://www.plantuml.com/plantuml/uml/RL5DQy904BtlhtXuB4WrGWyUYaBRGoaYpR7sC6u65J
 
 ## The architecture of a packing robot control system
 
-![w:500 center](../../figures/architecture_Robot.svg)
+![center](../../figures/architecture_Robot.svg)
 
 ---
 
@@ -549,7 +549,7 @@ https://www.plantuml.com/plantuml/uml/RL5DQy904BtlhtXuB4WrGWyUYaBRGoaYpR7sC6u65J
 
 ## Architectural views
 
-![w:800 h:400 center](../../figures/architecture_views.svg)
+![h:600 center](../../figures/architecture_views.svg)
 
 ---
 
